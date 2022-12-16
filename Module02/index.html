@@ -2,32 +2,41 @@
 <html lang="fr">
     <head>
         <title>My Music</title>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
-            <div id="logo">
-                <img src="images/mymusic_logo.png" alt="My Music logo"/>
+            <div id="header_logo">
+                <img src="images/mymusic_logo.png" alt="My Music logo">
             </div>
-            <h1>My music</h1>
-            <div>
-                <img src="images/avatar/avatar-tux_dark_vador_sabre.png" width="75px" alt="User icon"/>
+            <div id="header_title">
+                <h1>My music</h1>
             </div>
-            <div>
+            <div id="header_user_icon">
+                <img src="images/avatar/avatar-tux_dark_vador_sabre.png" width="75" alt="User icon">
+            </div>
+            <div id="header_user_state">
                 Denis ENI, connecté
             </div>
-            <div>
+            <div id="header_user_account">
                 <a href="#" id="user_account">Mon compte</a> | <a href="#">Déconnexion</a>
             </div>
         </header>
 
         <main>
+            Exemple Formulaire
+            <div id="contact">
+                <a href="mailto:contact@eni-ecole.fr" title="Contact">ENI ECOLE</a>
+            </div>
+            <div id="copyright">
+                <a href="http://www.eni-ecole.fr" title="Site ENI" target="_blank">Copyright&copy; ENI ECOLE Informatique </a>
+            </div>
             <hr>
             <fieldset>
                 <h3>Mon Compte</h3>
-                <form>
-                    <fieldset>
+                <form name="form_account">
+                    <fieldset id="user_form">
                         <legend>Vos informations personnelles</legend>
                         <label for="nom">Nom : </label>
                         <input type="text" id="nom" placeholder="Votre nom ?" required>             
@@ -36,7 +45,8 @@
                         <label for="prenom">Prénom : </label>
                         <input type="text" id="prenom" placeholder="Votre prenom ?" required>
                         <label for="groupe">Groupe préféré : </label>
-                        <select id="groupe">
+                        <select id="groupe" size="1">
+                            <option>Groupe</option>
                         </select>
                         <label for="email">Email : </label>
                         <input type="email" id="email" placeholder="Votre email ?" required>       
@@ -45,46 +55,46 @@
                         <label for="password">Mot de passe : </label>
                         <input type="password" id="password" placeholder="Votre mot de passe ?" required>
                         <label for="password">Répéter le mot de passe : </label>
-                        <input type="password" id="password" placeholder="Votre mot de passe ?" required>
+                        <input type="password" id="repeat_password" placeholder="Votre mot de passe ?" required>
                     </fieldset>
-                    <fieldset>
+                    <fieldset id="subscription_form">
                         <legend>Votre formule d'abonnnement</legend>
-                        <table id="formule">
+                        <table id="subcription_table">
                             <thead>
                                 <tr>
                                     <th></th>
                                     <th>
-                                        <input type="radio" id="premium_plus" name="nom_formule" />
-                                        <label for="premium_plus">Premium+</label>
+                                        <input type="radio" id="radio_premium_plus" name="radio_subscription_name" checked>
+                                        <label for="radio_premium_plus">Premium+</label>
                                     </th>
                                     <th>
-                                        <input type="radio" id="premium" name="nom_formule" />
-                                        <label for="premium">Premium</label>
+                                        <input type="radio" id="radio_premium" name="radio_subscription_name">
+                                        <label for="radio_premium">Premium</label>
                                     </th>
                                     <th>
-                                        <input type="radio" id="discovery" name="nom_formule" />
-                                        <label for="discovery">Discovery</label>
+                                        <input type="radio" id="radio_discovery" name="radio_subscription_name">
+                                        <label for="radio_discovery">Discovery</label>
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th>Accès web</th>
-                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK" /></td>
-                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK" /></td>
-                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK" /></td>
+                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK"></td>
+                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK"></td>
+                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK"></td>
                                 </tr>
                                 <tr>
                                     <th>Accès mobile</th>
-                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK" /></td>
-                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK" /></td>
-                                    <td><img src="images/icon-not-ok-32x32.png" alt="icon NOK" /></td>
+                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK"></td>
+                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK"></td>
+                                    <td><img src="images/icon-not-ok-32x32.png" alt="icon NOK"></td>
                                 </tr>
                                 <tr>
                                     <th>Écoute illimitée</th>
-                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK" /></td>
-                                    <td><img src="images/icon-not-ok-32x32.png" alt="icon NOK" /></td>
-                                    <td><img src="images/icon-not-ok-32x32.png" alt="icon NOK" /></td>
+                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK"></td>
+                                    <td><img src="images/icon-not-ok-32x32.png" alt="icon NOK"></td>
+                                    <td><img src="images/icon-not-ok-32x32.png" alt="icon NOK"></td>
                                 </tr>
                                 <tr>
                                     <th>Tarif</th>
@@ -95,17 +105,19 @@
                                 <tr>
                                     <th></th>
                                     <td colspan="3">
-                                        <input id="cb-newsletter" type="checkbox" />
+                                        <input id="cb-newsletter" type="checkbox">
                                         <label for="cb-newsletter">Recevoir nos newsletters</label>
-                                        <input id="cb-newsletter-partners" type="checkbox" />
+                                        <input id="cb-newsletter-partners" type="checkbox">
                                         <label for="cb-newsletter-partners">Recevoir les newsletters de nos partenaires</label>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </fieldset>
-                    <input type="reset" name="annuler" value="Annuler">
-                    <input type="submit" name="valider" value="Valider">
+                    <div id="buttons_form">
+                        <input type="reset" name="annuler" value="Annuler">
+                        <input type="submit" name="valider" value="Valider">
+                    </div>
                 </form>
             </fieldset>
         </main>
