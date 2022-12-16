@@ -21,55 +21,93 @@
                 <a href="#" id="user_account">Mon compte</a> | <a href="#">Déconnexion</a>
             </div>
         </header>
-        
+
         <main>
-            <article>
-                <img src="images/epica.jpg" alt="Epica" />
-                <h1>Biographie - Epica</h1>
-                <a href="index.html">Retour Accueil</a>
-                <hr>
-                <h2>Biographie</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien non dui tempus tincidunt nec eget ligula. Pellentesque suscipit sodales diam. 
-                    Pellentesque porta nulla nunc, varius mattis ex iaculis id. Suspendisse potenti. Phasellus auctor lacinia libero non posuere. 
-                    Vivamus dictum est vitae ligula sagittis, eu interdum velit dictum. Maecenas malesuada velit vitae tellus maximus, ornare consectetur erat consequat. 
-                    <p>Suspendisse sollicitudin arcu enim, eget rhoncus neque scelerisque sit amet. Sed nec orci id mi elementum convallis eu gravida sapien. 
-                    Morbi congue, est id vestibulum ultrices, est sapien malesuada est, vitae vestibulum urna tortor non erat. Nam sit amet arcu eget lacus interdum congue. 
-                    Sed a elementum lorem. Quisque ut laoreet elit.</p>
-                    <p>Etiam suscipit vulputate nunc eget varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                        Phasellus volutpat lacus diam, nec tempus massa pulvinar eget. Etiam rutrum malesuada scelerisque. In ante felis, varius congue augue sed, malesuada ornare diam. In in neque neque. 
-                        Aliquam vulputate lectus ac lorem varius, non mollis magna facilisis.Etiam suscipit vulputate nunc eget varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                        Phasellus volutpat lacus diam, nec tempus massa pulvinar eget. Etiam rutrum malesuada scelerisque. In ante felis, varius congue augue sed, malesuada ornare diam. In in neque neque.</p>
-                    <P> Aliquam vulputate lectus ac lorem varius, non mollis magna facilisis. Aenean at iaculis arcu. Phasellus in erat commodo, blandit libero ut, luctus sem. Integer nulla est, pharetra dignissim neque quis, mollis porta diam. 
-                        Praesent consectetur venenatis dignissim. Suspendisse nisi lacus, rhoncus ut libero eget, efficitur rhoncus nibh. Etiam condimentum arcu eget magna accumsan sagittis.</P>
-                    <hr>
-                <h2>Membres</h2>
-                <ul>
-                    <li>Mark Jansen - guitare rythmique, grunts, screaming (depuis 2002)</li>
-                    <li>Coen Janssen - synthétiseur, piano (depuis 2002)</li>
-                    <li>Simone Simons - chant lead (depuis 2003)</li>
-                    <li>Ariën van Weesenbeek - batterie, grunts (depuis 2007)</li>
-                    <li>Isaac Delahaye - guitare lead, chœurs (depuis 2009)</li>
-                    <li>Rob van der Loo - basse (depuis 2012)</li>
-                </ul>
-                <hr>
-                <h2>Discographie</h2>
-                <ul>
-                    <li>2003 : The Phantom Agony</li>
-                    <li>2005 : Consign to Oblivion</li>
-                    <li>2005 : The Score - An Epic Journey (BO du film néerlandais Joyride)</li>
-                    <li>2007 : The Divine Conspiracy</li>
-                    <li>2009 : Design Your Universe</li>
-                    <li>2012 : Requiem for the Indifferent</li>
-                    <li>2014 : The Quantum Enigma</li>
-                    <li>2016 : The Holographic Principle</li>
-                </ul>
-                <hr>
-                <h2>Artiste Similaire</h2>
-            </article>
+            <hr>
+            <fieldset>
+                <h3>Mon Compte</h3>
+                <form>
+                    <fieldset>
+                        <legend>Vos informations personnelles</legend>
+                        <label for="nom">Nom : </label>
+                        <input type="text" id="nom" placeholder="Votre nom ?" required>             
+                        <label for="date">Date de naissance : </label>
+                        <input type="date" id="date" required>
+                        <label for="prenom">Prénom : </label>
+                        <input type="text" id="prenom" placeholder="Votre prenom ?" required>
+                        <label for="groupe">Groupe préféré : </label>
+                        <select id="groupe">
+                        </select>
+                        <label for="email">Email : </label>
+                        <input type="email" id="email" placeholder="Votre email ?" required>       
+                        <label for="nom">Téléphone : </label>
+                        <input type="tel" id="telephone" placeholder="Votre téléphone ?" required>
+                        <label for="password">Mot de passe : </label>
+                        <input type="password" id="password" placeholder="Votre mot de passe ?" required>
+                        <label for="password">Répéter le mot de passe : </label>
+                        <input type="password" id="password" placeholder="Votre mot de passe ?" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Votre formule d'abonnnement</legend>
+                        <table id="formule">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>
+                                        <input type="radio" id="premium_plus" name="nom_formule" />
+                                        <label for="premium_plus">Premium+</label>
+                                    </th>
+                                    <th>
+                                        <input type="radio" id="premium" name="nom_formule" />
+                                        <label for="premium">Premium</label>
+                                    </th>
+                                    <th>
+                                        <input type="radio" id="discovery" name="nom_formule" />
+                                        <label for="discovery">Discovery</label>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Accès web</th>
+                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK" /></td>
+                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK" /></td>
+                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK" /></td>
+                                </tr>
+                                <tr>
+                                    <th>Accès mobile</th>
+                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK" /></td>
+                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK" /></td>
+                                    <td><img src="images/icon-not-ok-32x32.png" alt="icon NOK" /></td>
+                                </tr>
+                                <tr>
+                                    <th>Écoute illimitée</th>
+                                    <td><img src="images/icon-ok-32x32.png" alt="icon OK" /></td>
+                                    <td><img src="images/icon-not-ok-32x32.png" alt="icon NOK" /></td>
+                                    <td><img src="images/icon-not-ok-32x32.png" alt="icon NOK" /></td>
+                                </tr>
+                                <tr>
+                                    <th>Tarif</th>
+                                    <td>11,99€/mois</td>
+                                    <td>5,99€/mois</td>
+                                    <td>Gratuit 1 mois</td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td colspan="3">
+                                        <input id="cb-newsletter" type="checkbox" />
+                                        <label for="cb-newsletter">Recevoir nos newsletters</label>
+                                        <input id="cb-newsletter-partners" type="checkbox" />
+                                        <label for="cb-newsletter-partners">Recevoir les newsletters de nos partenaires</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                    <input type="reset" name="annuler" value="Annuler">
+                    <input type="submit" name="valider" value="Valider">
+                </form>
+            </fieldset>
         </main>
-
-        <footer>
-
-        </footer>
     </body>
 </html>
