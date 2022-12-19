@@ -1,4 +1,56 @@
 body
 {
     background-color: #555;
+    
+}
+
+#header_logo
+{
+    float: left;
+}
+
+#header_title
+{
+    color: white;
+}
+
+#header_user
+{
+    float: right;
+}
+
+#header_user_info
+{
+    float: right;
+}
+
+#header_user_state
+{
+    color: white;
+    text-shadow: 4px 4px 6px black;
+}
+
+#header_user_icon
+{
+    float: left;
+}
+
+main
+{
+    clear: both;
+}
+article img
+{
+    float: left;
+}
+
+hr
+{
+    clear: both;
+}
+
+#liste_membres, #liste_discographie
+{
+    float:left;
+	width:50%;
 }
