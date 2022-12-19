@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+
+body
+{
+    background-color: #555;
+    margin: auto;
+    width: 70%;
+
+    font-family: "Open Sans Condensed",sans-serif;
+}
+
+#header_logo
+{
+    float: left;
+}
+
+#header_title
+{
+    color: white;
+    float: left;
+    margin: 10px;
+    font-size: 24px;
+}
+
+#header_user
+{
+    float: right;
+    margin-top: 15px;
+}
+
+#header_user_info
+{
+    float: right;
+}
+
+#header_user_state
+{
+    color: white;
+    text-shadow: 4px 4px 6px black;
+}
+
+#header_user_icon
+{
+    float: left;
+}
+
+main
+{
+    clear: both;
+}
+article img
+{
+    float: left;
+    margin-right: 20px;
+}
+
+hr
+{
+    clear: both;
+}
+
+#liste_membres, #liste_discographie
+{
+    float:left;
+	width:50%;
+}

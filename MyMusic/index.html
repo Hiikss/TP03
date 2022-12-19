@@ -4,7 +4,7 @@
         <title>My Music</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/stylesheets/style.css" />
+        <link rel="stylesheet" href="assets/stylesheets/style.css">
     </head>
     <body>
         <header>
@@ -35,35 +35,76 @@
                 <a href="mailto:contact@eni-ecole.fr" title="Contact">ENI ECOLE</a>
             </div>
             <div id="copyright">
-                <a href="http://www.eni-ecole.fr" title="Site ENI" target="_blank">Copyright&copy; ENI ECOLE Informatique </a>
+                <a href="http://www.eni-ecole.fr" title="Site ENI" target="_blank">Copyright&copy; ENI ECOLE Informatique</a>
             </div>
-            <hr>
-            <fieldset>
-                <h3>Mon Compte</h3>
+            <div id="account_form" class="dialog_form" >
+                <h2>Mon Compte</h2>
                 <form name="form_account">
-                    <fieldset id="user_form">
-                        <legend>Vos informations personnelles</legend>
-                        <label for="nom">Nom : </label>
-                        <input type="text" id="nom" placeholder="Votre nom ?" required>             
-                        <label for="date">Date de naissance : </label>
-                        <input type="date" id="date" required>
-                        <label for="prenom">Prénom : </label>
-                        <input type="text" id="prenom" placeholder="Votre prenom ?" required>
-                        <label for="groupe">Groupe préféré : </label>
-                        <select id="groupe" size="1">
-                            <option>Groupe</option>
-                        </select>
-                        <label for="email">Email : </label>
-                        <input type="email" id="email" placeholder="Votre email ?" required>       
-                        <label for="nom">Téléphone : </label>
-                        <input type="tel" id="telephone" placeholder="Votre téléphone ?" required>
-                        <label for="password">Mot de passe : </label>
-                        <input type="password" id="password" placeholder="Votre mot de passe ?" required>
-                        <label for="password">Répéter le mot de passe : </label>
-                        <input type="password" id="repeat_password" placeholder="Votre mot de passe ?" required>
-                    </fieldset>
-                    <fieldset id="subscription_form">
-                        <legend>Votre formule d'abonnnement</legend>
+                    <div id="user_form">
+                        Vos informations personnelles
+                        <hr>
+                        <div class="form_line">
+                            <div class="form_label">
+                                <label for="nom">Nom : </label>
+                            </div>
+                            <div class="form_field">
+                                <input type="text" id="nom" placeholder="Votre nom ?" required>   
+                            </div> 
+                            <div class="form_label">         
+                                <label for="date">Date de naissance : </label>
+                            </div>
+                            <div class="form_field">
+                                <input type="date" id="date" required>
+                            </div>
+                        </div>
+                        <div class="form_line">
+                            <div class="form_label"> 
+                                <label for="prenom">Prénom : </label>
+                            </div>
+                            <div class="form_field">
+                                <input type="text" id="prenom" placeholder="Votre prenom ?" required>
+                            </div>
+                            <div class="form_label"> 
+                                <label for="groupe">Groupe préféré : </label>
+                            </div>
+                            <div class="form_field">
+                            <select id="groupe" size="1">
+                                    <option>Groupe</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form_line">
+                            <div class="form_label"> 
+                                <label for="email">Email : </label>
+                            </div>
+                            <div class="form_field">
+                                <input type="email" id="email" placeholder="Votre email ?" required> 
+                            </div>      
+                            <div class="form_label"> 
+                                <label for="nom">Téléphone : </label>
+                            </div>
+                            <div class="form_field">
+                                <input type="tel" id="telephone" placeholder="Votre téléphone ?" required>
+                            </div>
+                        </div>
+                        <div class="form_line">
+                            <div class="form_label"> 
+                                <label for="password">Mot de passe : </label>
+                            </div>
+                            <div class="form_field">
+                                <input type="password" id="password" placeholder="Votre mot de passe ?" required>
+                            </div>
+                            <div class="form_label"> 
+                                <label for="password">Répéter le mot de passe : </label>
+                            </div>
+                            <div class="form_field">
+                                <input type="password" id="repeat_password" placeholder="Votre mot de passe ?" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="subscription_form">
+                        Votre formule d'abonnnement
+                        <hr>
                         <table id="subcription_table">
                             <thead>
                                 <tr>
@@ -109,22 +150,22 @@
                                 </tr>
                                 <tr>
                                     <th></th>
-                                    <td colspan="3">
-                                        <input id="cb-newsletter" type="checkbox">
-                                        <label for="cb-newsletter">Recevoir nos newsletters</label>
-                                        <input id="cb-newsletter-partners" type="checkbox">
-                                        <label for="cb-newsletter-partners">Recevoir les newsletters de nos partenaires</label>
+                                    <td class="newsletter" colspan="3">
+                                        <input id="newsletter" type="checkbox">
+                                        <label for="newsletter">Recevoir nos newsletters</label>
+                                        <input id="newsletter_partners" type="checkbox">
+                                        <label for="newsletter_partners">Recevoir les newsletters de nos partenaires</label>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                    </fieldset>
+                    </div>
                     <div id="buttons_form">
-                        <input type="reset" name="annuler" value="Annuler">
-                        <input type="submit" name="valider" value="Valider">
+                        <input type="reset" name="annuler" value="Annuler" class="buttonForm">
+                        <input type="submit" name="valider" value="Valider" class="buttonForm">
                     </div>
                 </form>
-            </fieldset>
+            </div>
         </main>
     </body>
 </html>
