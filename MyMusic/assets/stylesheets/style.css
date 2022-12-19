@@ -1,7 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+
 body
 {
     background-color: #555;
-    
+    margin: auto;
+    width: 70%;
+
+    font-family: "Open Sans Condensed",sans-serif;
 }
 
 #header_logo
@@ -12,11 +17,15 @@ body
 #header_title
 {
     color: white;
+    float: left;
+    margin: 10px;
+    font-size: 24px;
 }
 
 #header_user
 {
     float: right;
+    margin-top: 15px;
 }
 
 #header_user_info
@@ -42,6 +51,7 @@ main
 article img
 {
     float: left;
+    margin-right: 20px;
 }
 
 hr
