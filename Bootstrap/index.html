@@ -27,15 +27,16 @@
                 <div id="audio_control" class="col-md-12 col-lg-3 noimpression">
                     <div class="container">
                         <div class="row gy-3">
-                            <button type="button" id="prev" class="col-3 btn btn-light border"><span class="bi bi-arrow-left-circle"></span></button>
-                            <button type="button" id="play" class="col-4 offset-1 btn btn-light border"><span class="bi bi-play-circle"></span></button>
-                            <button type="button" id="netx" class="col-3 offset-1 btn btn-light border"><span class="bi bi-arrow-right-circle"></span></button>  
+                            <button type="button" id="prev" class="col-3 btn btn-light border"><span class="bi bi-chevron-double-left"></span></button>
+                            <button type="button" id="play" class="col-4 offset-1 btn btn-light border"><span class="bi bi-caret-right"></span></button>
+                            <button type="button" id="netx" class="col-3 offset-1 btn btn-light border"><span class="bi bi-chevron-double-right"></span></button>  
                         
-                            <button type="button" id="minVolume" class="col-2 btn btn-light border"><span class="bi bi-volume-down-fill"></span></button>
+                            <button type="button" id="minVolume" class="col-2 btn btn-light border"><span class="bi bi-volume-down"></span></button>
                             <input type="range" id="rangeVolume" class="col-6 offset-1" value="0.5" min="0" max="1" step="0.01" >
-                            <button type="button" id="maxVolume" class="col-2 offset-1 btn btn-light border"><span class="bi bi-volume-up-fill"></span></button>
+                            <button type="button" id="maxVolume" class="col-2 offset-1 btn btn-light border"><span class="bi bi-volume-up"></span></button>
                         </div>
                     </div>
+                    <br>
                 </div>
                 <div id="audio_status" class="col-md-6 col-lg-4 offset-lg-1">
                     <h4>Nom artiste</h4>
@@ -46,27 +47,105 @@
                     <form>
                         <div class="input-group">
                             <button class="btn btn-light border" type="button" id="search_button"><span class="bi bi-search"></span></button>
-                            <input id="type_search" type="text" class="form-control border" id="search_zone_input" placeholder="Recherche">
+                            <input id="type_search" type="text" class="form-control border" placeholder="Recherche">
                         </div> 
                     </form>
                 </div>
             </div>
         </header>
 
-        <div class="row">
-            <nav class="col-lg-2 col-md-3 col-sm-12 noimpression">
+        <div id="test" class="row">
+            <nav class="col-lg-2 col-md-3 col-12 noimpression">
                 <div id="menu_nav" class="list-group">
                     <a href="" class="list-group-item active">Musique</a>
                     <a href=""  class="list-group-item">Vidéos</a>
                     <a href=""  class="list-group-item">Podcast</a>
                 </div>
             </nav>
-            
-            <article class="col-lg-10 col-md-9 col-sm-12">
-                Test
+
+            <article class="col-lg-10 col-md-9 col-12 mt-md-0 mt-4">
+                <div id="musics">
+                    <div class="row"> 
+                        <div class="col-xl-3 col-lg-4 col-6">
+                            <a href="#" onclick="document.getElementById('audio1').play()">
+                                <img src="assets/images/175/1.jpg" alt="pochette">
+                                <h3>Symphonie n°5</h3>
+                                <p>Beethoven</p>
+                            </a>
+                            <audio id="audio1" src="assets/audio/Symphony_No_5_by_Beethoven.mp3"></audio>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-6">
+                            <a href="#" onclick="document.getElementById('audio2').play()">
+                                <img src="assets/images/175/2.jpg" alt="pochette">
+                                <h3>Blue skies</h3>
+                                <p>Silent Partner</p>
+                            </a>
+                            <audio id="audio2" src="assets/audio/Blue_Skies.mp3"></audio>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-6">
+                            <a href="#" onclick="document.getElementById('audio3').play()">
+                                <img src="assets/images/175/3.jpg" alt="pochette">
+                                <h3>Cartoon hoedown</h3>
+                                <p>Media right productions</p>
+                            </a>
+                            <audio id="audio3" src="assets/audio/Cartoon_Hoedown.mp3"></audio>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-6">
+                            <a href="#" onclick="document.getElementById('audio4').play()">
+                                <img src="assets/images/175/4.jpg" alt="pochette">
+                                <h3>Earthy crust</h3>
+                                <p>Jingle Punks</p>
+                            </a>
+                            <audio id="audio4" src="assets/audio/Earthy_Crust.mp3"></audio>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-6">
+                            <a href="#" onclick="document.getElementById('audio5').play()">
+                                <img src="assets/images/175/5.jpg" alt="pochette">
+                                <h3>Hold on a minute</h3>
+                                <p>Silent Partner</p>
+                            </a>
+                            <audio id="audio5" src="assets/audio/Hold_On_a_Minute.mp3"></audio>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-6">
+                            <a href="#" onclick="document.getElementById('audio6').play()">
+                                <img src="assets/images/175/6.jpg" alt="pochette">
+                                <h3>Stay with you</h3>
+                                <p>Silent Partner</p>
+                            </a>
+                            <audio id="audio6" src="assets/audio/Stay_With_You.mp3"></audio>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-6">
+                            <a href="#" >
+                                <img src="assets/images/175/7.jpg" alt="pochette">
+                                <h3>Titre</h3>
+                                <p>Nom artiste</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-6">
+                            <a href="#" >
+                                <img src="assets/images/175/1.jpg" alt="pochette">
+                                <h3>Titre</h3>
+                                <p>Nom artiste</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-6">
+                            <a href="#" >
+                                <img src="assets/images/175/2.jpg" alt="pochette">
+                                <h3>Titre</h3>
+                                <p>Nom artiste</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-6">
+                            <a href="#" >
+                                <img src="assets/images/175/3.jpg" alt="pochette">
+                                <h3>Titre</h3>
+                                <p>Nom artiste</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </article>
         </div>
     </section>
-
 </body>
 </html>
