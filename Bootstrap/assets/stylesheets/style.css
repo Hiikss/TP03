@@ -38,6 +38,7 @@ section
     text-decoration:none;
     min-height: 100%;
     box-shadow: 0px 0px 4px 0px #c0c0c0;
+    border-radius: 8px;
     padding-top:10px;
 }
 
